@@ -1,0 +1,60 @@
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.welcome p {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome img {
+    width: 40%;
+    height: 60%;
+    border-radius: 37px;
+}
+
+.block ul {
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 36px;
+    background-image: url('/static/images/background.jpg');
+    background-attachment: fixed;
+}
+
+.menu>* {
+    margin: 40px;
+}
+
+.menu h1 {
+    font-size: 48px;
+    border-bottom: 1px solid white;
+}
+
+.trailer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trailer h1 {
+    font-size: 50px;
+    padding: 30px;
+}
+
+.trailer iframe {
+    margin: 0 50px 50px 50px;
+    width: 90%;
+    height: 705px;
+    border-radius: 80px;
+    align-self: auto;
+}

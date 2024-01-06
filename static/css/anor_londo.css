@@ -1,0 +1,47 @@
+body {
+    background-image: url('/static/images/locations/anor_londo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    background-color: rgba(83, 57, 40, .75);
+}
+
+.block {
+    background-color: rgba(99, 73, 56, .75);
+}
+
+footer {
+    background-color: rgb(83, 57, 40);
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex h1 {
+    width: 100%;
+}
+
+.wrap {
+    padding: 40px 0 40px 0;
+}
+
+.wrap h2 {
+    text-align: center;
+}
+
+.wrap ul {
+    padding: 20px 0 0 30px;
+}
+
+.right-img-pos {
+    float: right;
+    width: 461px;
+    height: 700px;
+    margin: 0 0 40px 40px;
+}

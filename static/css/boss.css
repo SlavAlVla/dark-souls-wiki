@@ -1,0 +1,39 @@
+.block figure {
+    padding-top: 30px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block figure iframe {
+    width: 1045px;
+    height: 588px;
+    border-radius: 80px;
+}
+
+.block figure figcaption {
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.info img {
+    height: 350px;
+    float: right;
+    margin-left: 40px;
+}
+
+.indent {
+    padding-left: 40px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row img {
+    height: 500px;
+    border-radius: 50px;
+}

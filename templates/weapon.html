@@ -1,0 +1,159 @@
+{% extends 'index.html' %}
+{% block head %}
+<title>Оружие</title>
+{% endblock %}
+{% block content %}
+<h1 class="main_title">ОРУЖИЕ</h1>
+<article class="block">
+    <h1>УПРАВЛЕНИЕ</h1>
+    <ul>
+        <li>Удерживая оружие в правой руке, вы можете проводить различные комбинации ударов :
+            обычный, силовой, на бегу, после переката, после отскока и в прыжке.</li>
+        <li>Если взять оружие в две руки, то помимо замены анимаций обычного и силового ударов,
+            параметр силы увеличится в 1,5 раза, атака возрастет на 20%.</li>
+        <li>Если взять оружие в левую руку, то в большинстве случаев LB/L1/Shift — это блок,
+            а LT/L2/Tab — это атака, но у кривых мечей, рапир, катан, кнутов и кинжалов атака заменена на парирование.
+            Более того, все критические атаки нельзя провести левой рукой.</li>
+        <li>Щит: если вы держите щит в правой руке, пинок заменяется на лёгкий удар щитом.
+            Использование этого удара ещё более сомнительно, чем идея взять щит вместо оружия,
+            так как урон отсутствует (кроме "атакующих" щитов, вроде шипастого или пронзающего),
+            а иссушение выносливости не намного выше, чем у обычного удара.</li>
+        <li>Если во время спринта зажать блок и нажать на кнопку отскока, то персонаж вместо прыжка совершит обычный перекат.</li>
+    </ul>
+</article>
+<article class="block">
+    <h1>КАТЕГОРИИ</h1>
+    <div class="list">
+        <h1>Кинжалы</h1>
+            <figure>
+                <img src='/static/images/weapon/dagger.png'><figcaption>Кинжал<figcaption>
+			</figure>
+            <figure>
+                <img src="/static/images/weapon/bandit's knife.png"><figcaption>Нож бандита<figcaption>
+			</figure>
+            <figure>
+                <img src='/static/images/weapon/dark silver tracer.png'><figcaption>Темный серебряный след<figcaption>
+			</figure>
+        <h1>Прямые мечи</h1>
+            <figure>
+                <img src="/static/images/weapon/astora's straight sword.png"><figcaption>Асторский прямой меч<figcaption>
+			</figure>
+            <figure>
+                <img src="/static/images/weapon/drake sword.png"><figcaption>Меч дракона<figcaption>
+			</figure>
+            <figure>
+                <img src='/static/images/weapon/darksword.png'><figcaption>Темный меч<figcaption>
+			</figure>
+        </tr>
+        <h1>Большие мечи</h1>
+        <tr>
+            <figure>
+				<img src='/static/images/weapon/bastard sword.png'><figcaption>Полуторный меч<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/claymore.png"><figcaption>Клеймор<figcaption>
+			</figure>
+            <figure>
+				<img src='/static/images/weapon/greatsword of artorias (cursed).png'><figcaption>Проклятый меч Арториаса<figcaption>
+			</figure>
+        </tr>
+        <h1>Огромные мечи</h1>
+        <tr>
+            <figure>
+				<img src='/static/images/weapon/zweihander.png'><figcaption>Двуручный меч<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/black knight greatsword.png"><figcaption>Большой меч черного рыцаря<figcaption>
+			</figure>
+            <figure>
+				<img src='/static/images/weapon/dragon greatsword.png'><figcaption>Большой меч дракона<figcaption>
+			</figure>
+        </tr>
+        <h1>Кривые мечи</h1>
+        <tr>
+            <figure>
+				<img src='/static/images/weapon/scimitar.png'><figcaption>Сабля<figcaption>
+			
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/gold tracer.png"><figcaption>Золотой след<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/quelaag's furysword.png"><figcaption>Яростный меч Квилег<figcaption>
+			</figure>
+        </tr>
+        <h1>Большие кривые мечи</h1>
+        <tr>
+            <figure>
+				<img src='/static/images/weapon/murakumo.png'><figcaption>Муракумо<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/server.png"><figcaption>Жертвенный клинок<figcaption>
+			</figure>
+            <figure>
+				<img src='/static/images/weapon/gravelord sword.png'><figcaption>Меч повелителя могил<figcaption>
+			</figure>
+        </tr>
+        <h1>Катаны</h1>
+        <tr>
+            <figure>
+				<img src='/static/images/weapon/uchigatana.png'><figcaption>Утигатана<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/washing pole.png"><figcaption>Катана<figcaption>
+			</figure>
+            <figure>
+				<img src='/static/images/weapon/chaos blade.png'><figcaption>Клинок Хаоса<figcaption>
+			</figure>
+        </tr>
+        <h1>Большие Секиры</h1>
+        <tr>
+            <figure>
+				<img src='/static/images/weapon/black knight greataxe.png'><figcaption>Большая секира черного рыцаря<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/dragon king greataxe.png"><figcaption>Большая секира Короля Драконов<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/demon's greataxe.png"><figcaption>Демоническая секира<figcaption>
+			</figure>
+        </tr>
+        <h1>Большие молоты</h1>
+        <tr>
+            <figure>
+				<img src="/static/images/weapon/demon's great hammer.png"><figcaption>Демонический молот<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/dragon tooth.png"><figcaption>Зуб дракона<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/smough's hammer.png"><figcaption>Молот Смоуга<figcaption>
+			</figure>
+        </tr>
+        <h1>Копья</h1>
+        <tr>
+            <figure>
+				<img src="/static/images/weapon/demon's spear.png"><figcaption>Демоническое копье<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/moonlight butterfly horn.png"><figcaption>Рог лунной бабочки<figcaption>
+			</figure>
+            <figure>
+				<img src='/static/images/weapon/dragonslayer spear.png'><figcaption>Копье Драконоборца<figcaption>
+			</figure>
+        </tr>
+        <h1>Луки</h1>
+        <tr>
+            <figure>
+				<img src='/static/images/weapon/longbow.png'><figcaption>Большой лук<figcaption>
+			</figure>
+            <figure>
+				<img src="/static/images/weapon/black bow of pharis.png"><figcaption>Темный лук<figcaption>
+			</figure>
+            <figure>
+				<img src='/static/images/weapon/darkmoon bow.png'><figcaption>Лук Темной Луны<figcaption>
+			</figure>
+        </tr>
+    </div>
+</article>
+{% endblock %}

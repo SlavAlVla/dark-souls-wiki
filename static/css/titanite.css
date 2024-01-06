@@ -1,0 +1,44 @@
+.description {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.description h1 {
+    width: 100%;
+}
+
+.description p {
+    flex: 2;
+}
+
+.description figure {
+    padding-left: 30px;
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.description figcaption {
+    font-size: 24px;
+}
+
+.description img {
+    width: 300px;
+}
+
+.block ul {
+    padding: 20px 40px 40px 40px;
+}
+
+.info figure {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.info figure figcaption {
+    font-size: 20px;
+}

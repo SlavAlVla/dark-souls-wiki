@@ -1,0 +1,20 @@
+.scheme {
+    position: relative;
+    background-image: url('/static/images/background.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 40px;
+    margin: 40px;
+}
+
+.scheme img {
+    width: 100%;
+}
+
+.scheme a {
+    position: absolute;
+    width: 13%;
+    height: 9.3%;
+    top: 68.9%;
+    left: 44.5%;
+}

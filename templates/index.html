@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css">
+    {% block head %}
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>Dark Souls Russian Wiki</title>
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <a href="/"><img src="static/images/logo.png" alt="logo"></a>
+        <nav>
+            <a href="/pages">СТРАНИЦЫ</a>
+            <a href="/about">ОБ ИГРЕ</a>
+            <a href="/forum">ОБСУЖДЕНИЯ</a>
+        </nav>
+    </header>
+    <main>
+        <article class="main">
+            {% block content %}
+            <h1 class="main_title">ЗАГЛАВНАЯ</h1>
+            <article class="welcome block">
+                <p>Добро пожаловать на страницу русскоязычной энциклопедии о серии игр Dark Souls</p>
+                <img src="static/images/posters/ds_poster.jpg" alt="poster1">
+                <img src="static/images/posters/ds_rem_poster.jpg" alt="poster2">
+                <p>Dark Souls — серия ролевых игр, разработанная FromSoftware и изданная Bandai Namco Entertainment.</p>
+            </article>
+            <article class="menu block" id="pages">
+                <div><h1>ПРЕДМЕТЫ</h1>
+                <ul>
+                    <li><a href="/titanite">Титанит</a></li>
+                    <li>Угли</li>
+                    <li>Сюжетные ключи</li>
+                    <li>Души</li>
+                    <li>Расходники</li>
+                </ul></div>
+                <div><h1>ЭКИПИРОВКА</h1>
+                <ul>
+                    <li><a href='/weapon'>Оружие</a></li>
+                    <li>Броня</li>
+                    <li>Кольца</li>
+                </ul></div>
+                <div><h1>МАГИЯ</h1>
+                <ul>
+                    <li>Волшебство</li>
+                    <li>Пиромантия</li>
+                    <li>Чудеса</li>
+                </ul></div>
+                <div><h1>ОКРУЖЕНИЕ</h1>
+                <ul>
+                    <li><a href='/locations'>Локации</a></li>
+                    <li><a href='/bosses'>Боссы</a></li>
+                    <li>Противники</li>
+                    <li>Торговцы</li>
+                    <li>Фантомы</li>
+                </ul></div>
+                <div><h1>ЛОР</h1>
+                <ul>
+                    <li><a href='/lore'>Лор</a></li>
+                    <li>Сюжет</li>
+                </ul></div>
+            </article>
+            <article class="trailer block">
+                <h1>ТРЕЙЛЕР</h1>
+                <iframe src="https://www.youtube.com/embed/KfjG9ZLGBHE?si=N-XokKvXFnVSSwkz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </article>
+            {% endblock %}
+        </article>
+    </main>
+    <footer>
+        <p>Все права принадлежат Dark souls, FromSoftware, Bandai Namco</p>
+    </footer>
+</body>
+</html>

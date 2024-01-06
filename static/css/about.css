@@ -1,0 +1,13 @@
+.block img {
+    height: 400px;
+}
+
+#poster1, #poster3 {
+    float: left;
+    margin: 0 40px 40px 0;
+}
+
+#poster2, #poster4 {
+    float: right;
+    margin: 0 0 40px 40px;
+}

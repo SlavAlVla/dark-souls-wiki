@@ -1,0 +1,25 @@
+.block {   
+    display: flex;
+    flex-direction: column;
+}
+
+.block p {
+    padding: 20px;
+}
+
+.right_content {
+    height: 400px;
+    float: right;
+    margin-left: 40px;
+}
+
+.left_content {
+    height: 400px;
+    float: left;
+    margin-right: 40px;
+}
+
+#the_great_war {
+    width: 65%;
+    margin: auto;
+}
