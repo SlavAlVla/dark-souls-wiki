@@ -59,6 +59,7 @@ def anor_londo():
 @app.route('/pages')
 def pages():
     pages_link = os.listdir('templates')
+    pages_link.sort()
     pages = {}
     pages_list = []
     pages_name = [
@@ -81,6 +82,7 @@ def pages():
         pages_list.append(new_page)
     for page_key, page_name in zip(pages_list, pages_name):
         pages[page_key] = page_name
+    print(pages)
     return render_template('pages.html', pages = pages, pages_len = len(pages), pages_items=pages_list)
 
 # @app.route('/cart')

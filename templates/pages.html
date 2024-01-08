@@ -4,7 +4,7 @@
 {% endblock %}
 {% block content %}
 <div style='display: flex; flex-flow: row wrap; justify-content: space-around;' class="flex">
-{% for i in range(1, pages_len//3) %}
+{% for i in range(1, pages_len//3 + 1) %}
 <div class="wrap" style="padding-bottom: 40px;">
 {% for page in pages_items[(i-1)*3: i*3] %}
 <p style="font-size: 30px; padding: 10px;">
