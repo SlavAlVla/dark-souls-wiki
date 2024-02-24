@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,300&display=swap');
-
+ 
 * {
     margin: 0;
     color: white;
@@ -21,60 +21,61 @@ body {
 }
 
 img, video {
-    border-radius: 80px;
+    border-radius: 4vw;
 }
 
 header {
-    padding-top: 20px;
+    padding-top: 2vh;
 }
 
 header>* {
     display: inline-block;
-    margin: 10px;
+    margin: 1vh;
     vertical-align: middle;
     text-align: center;
 }
 
 header img {
-    width: 400px;
+    width: 20vw;
 }
 
 header a {
     text-decoration: none;
     color: white;
-    font-size: 28px;
-    margin-right: 75px;
+    font-size: 1.4vw;
+    margin-right: 3.7vw;
 }
 
 main {
     background-color: rgba(29, 31, 42, .75);
-    width: 80%;
-    padding: 58px;
-    margin: 5% auto auto auto;
-    border-radius: 80px;
+    width: 80vw;
+    padding: 5%;
+    margin: 5vw auto auto auto;
+    border-radius: 4vw;
 }
 
 .main_title {
-    font-size: 70px;
+    font-size: 3.5vw;
     text-align: center;
 }
 
 .block {
     background-color: rgba(45, 47, 58, .75);
-    border-radius: 80px;
-    padding: 40px;
-    margin: 25px;
+    border-radius: 4vw;
+    padding: 5%;
+    margin: 5%;
 }
 
 .block p {
-    font-size: 25px;
+    font-size: 28px;
     text-align: justify;
-    padding: 40px;
+    padding: 5%;
 }
 
 .block h1 {
     font-size: 40px;
     text-align: center;
+    padding-bottom: 5%;
 }
 
 .block ul {
@@ -91,9 +92,10 @@ main {
 
 .list {
     margin-top: 40px;
-    border-radius: 80px;
+    border-radius: 4vw;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
     align-content: center;
     background-image: url('/static/images/table_pattern.png');
     background-size: 500px;
@@ -102,7 +104,7 @@ main {
 }
 
 .list h1:first-child {
-    border-radius: 80px 80px 0 0;
+    border-radius: 7.4vh 4vw 0 0;
 }
 
 .list h1 {
@@ -135,6 +137,37 @@ main {
 
 footer {
     background-color: #1D1F2A;
-    padding: 80px;
+    padding: 3%;
     margin-top: 100px;
+}
+
+/* телефоны вертикально */
+@media (max-width: 480px) {
+    body {
+        background-position: 20% 50%;
+    }
+    header a {
+        font-size: 2.8vw;
+    }
+
+    .main_title {
+        font-size: 7vw;
+    }
+
+    .block h1 {
+        font-size: 24px;
+    }
+
+    .block p {
+        font-size: 14px;
+    }
+
+    .block li {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 10px;
+        margin-top: 40px;
+    }
 }
