@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block head %}
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="/static/css/index.css">
     <title>Dark Souls Russian Wiki</title>
     {% endblock %}
 </head>
 <body>
+    <div id="wrap">
     <header>
-        <a href="/"><img src="static/images/logo.png" alt="logo" id="logo"></a>
+        <a href="/"><img src="/static/images/logo.png" alt="logo" id="logo"></a>
         <nav>
             <a href="/pages">СТРАНИЦЫ</a>
             <a href="/about">ОБ ИГРЕ</a>
@@ -26,8 +27,8 @@
             <h1 class="main_title">ЗАГЛАВНАЯ</h1>
             <article class="welcome block">
                 <p>Добро пожаловать на страницу русскоязычной энциклопедии о серии игр Dark Souls</p>
-                <img src="static/images/posters/ds_poster.jpg" alt="poster1">
-                <img src="static/images/posters/ds_rem_poster.jpg" alt="poster2">
+                <img src="/static/images/posters/ds_poster.jpg" alt="poster1">
+                <img src="/static/images/posters/ds_rem_poster.jpg" alt="poster2">
                 <p>Dark Souls — серия ролевых игр, разработанная FromSoftware и изданная Bandai Namco Entertainment.</p>
             </article>
             <article class="menu block" id="pages">
@@ -72,6 +73,7 @@
             {% endblock %}
         </article>
     </main>
+    </div>
     <footer>
         <p>Все права принадлежат Dark souls, FromSoftware, Bandai Namco</p>
     </footer>

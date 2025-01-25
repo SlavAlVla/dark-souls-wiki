@@ -12,6 +12,10 @@ a {
 
 img, iframe {max-width: 100%; object-fit: cover;}
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Literata', serif;
     background-image: url('/static/images/background.jpg');
@@ -20,19 +24,23 @@ body {
     background-attachment: fixed;
 }
 
+#wrap {
+    min-height: 100%;
+}
+
 img, video {
     border-radius: 4vw;
 }
 
 header {
     padding-top: 2vh;
+    display: flex;
+    align-items: center;
 }
 
 header>* {
     display: inline-block;
     margin: 1vh;
-    vertical-align: middle;
-    text-align: center;
 }
 
 header img {
@@ -137,8 +145,9 @@ main {
 
 footer {
     background-color: #1D1F2A;
-    padding: 3%;
     margin-top: 100px;
+    width: 88%;
+    padding: 6%;
 }
 
 /* телефоны вертикально */
@@ -147,7 +156,15 @@ footer {
         background-position: 20% 50%;
     }
     header a {
-        font-size: 2.8vw;
+        font-size: 3.3vw;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
     }
 
     .main_title {
@@ -155,19 +172,26 @@ footer {
     }
 
     .block h1 {
-        font-size: 24px;
+        font-size: 6vw;
     }
 
     .block p {
+        font-size: 4vw;
+    }
+
+    .block ul {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    .block li {
         font-size: 14px;
     }
-
-    .block li {
-        font-size: 18px;
-    }
-
+    
     footer {
+        margin-top: 50px;
         font-size: 10px;
-        margin-top: 40px;
+        width: 76%;
+        padding: 12%;
     }
 }
