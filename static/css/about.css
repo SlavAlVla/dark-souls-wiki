@@ -11,3 +11,7 @@
     float: right;
     margin: 0 0 40px 40px;
 }
+
+@media (max-width: 630px) {
+    .block img { height: auto; }
+}

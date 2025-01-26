@@ -1,0 +1,14 @@
+.wrap {
+    padding-bottom: 40px;
+}
+
+.wrap p {
+    font-size: 30px;
+    padding: 10px;
+}
+
+@media (max-width: 630px) {
+    .wrap p {
+        font-size: 4vw;
+    }
+}

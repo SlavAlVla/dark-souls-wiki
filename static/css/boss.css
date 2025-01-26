@@ -7,8 +7,8 @@
 
 .block figure iframe {
     width: 1045px;
-    height: 588px;
-    border-radius: 80px;
+    aspect-ratio: 16/9;
+    border-radius: 4vw;
 }
 
 .block figure figcaption {
@@ -21,6 +21,7 @@
     height: 350px;
     float: right;
     margin-left: 40px;
+    object-fit: contain;
 }
 
 .indent {
@@ -36,4 +37,19 @@
 .row img {
     height: 500px;
     border-radius: 50px;
+}
+
+@media (max-width: 630px) {
+    .row img {
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .block figure figcaption {
+        font-size: 4vw;
+    }
+
+    .indent {
+        padding-left: 15px;
+    }
 }

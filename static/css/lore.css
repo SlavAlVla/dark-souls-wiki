@@ -11,15 +11,23 @@
     height: 400px;
     float: right;
     margin-left: 40px;
+    aspect-ratio: 16/9;
 }
 
 .left_content {
     height: 400px;
     float: left;
     margin-right: 40px;
+    aspect-ratio: 16/9;
 }
 
 #the_great_war {
     width: 65%;
     margin: auto;
+}
+
+@media (max-width: 630px) {
+    .left_content, .right_content {
+        height: 200px;
+    }
 }

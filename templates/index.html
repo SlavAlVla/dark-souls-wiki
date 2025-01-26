@@ -6,6 +6,8 @@
     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/static/js/anime.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     {% block head %}
     <link rel="stylesheet" href="/static/css/index.css">
     <title>Dark Souls Russian Wiki</title>
@@ -14,11 +16,21 @@
 <body>
     <div id="wrap">
     <header>
+        <span class="burger_button">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </span>
         <a href="/"><img src="/static/images/logo.png" alt="logo" id="logo"></a>
         <nav>
             <a href="/pages">СТРАНИЦЫ</a>
             <a href="/about">ОБ ИГРЕ</a>
             <a href="/forum">ОБСУЖДЕНИЯ</a>
+        </nav>
+        <nav class="mini_menu">
+            <a class="mini_link" href="/pages">СТРАНИЦЫ</a>
+            <a class="mini_link" href="/about">ОБ ИГРЕ</a>
+            <a class="mini_link" href="/forum">ОБСУЖДЕНИЯ</a>
         </nav>
     </header>
     <main>
@@ -77,5 +89,6 @@
     <footer>
         <p>Все права принадлежат Dark souls, FromSoftware, Bandai Namco</p>
     </footer>
+    <script src="/static/js/burger.js"></script>
 </body>
 </html>

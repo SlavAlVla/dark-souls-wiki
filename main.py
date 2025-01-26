@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, url_for, redirect
-import os
+import json
 # from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 
 app = Flask(__name__)
@@ -62,32 +62,10 @@ def anor_londo():
 
 @app.route('/pages')
 def pages():
-    pages_link = os.listdir('templates')
-    pages_link.sort()
-    pages = {}
-    pages_list = []
-    pages_name = [
-        'Об игре',
-        'Анор Лондо',
-        'Арториас',
-        'Боссы',
-        'Обсуждения',
-        'Главная',
-        'Локации',
-        'Лор',
-        'Орнштейн и Смоуг',
-        'Страницы',
-        'Титанит',
-        'Оружие'
-    ]
-    for page in pages_link:
-        new_page = page.replace('.html', '')
-        new_page = new_page.replace('index', '')
-        pages_list.append(new_page)
-    for page_key, page_name in zip(pages_list, pages_name):
-        pages[page_key] = page_name
-    print(pages)
-    return render_template('pages.html', pages = pages, pages_len = len(pages), pages_items=pages_list)
+    with open('static/json/data.json', 'r', encoding="utf-8") as d:
+        data = json.load(d)
+        d.close()
+    return render_template('pages.html', pages = data["pages"], pages_len = len(list(data["pages"].keys())), pages_items=list(data["pages"].keys()))
 
 # @app.route('/cart')
 # def cart():

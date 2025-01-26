@@ -51,7 +51,7 @@
     align-self: auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 630px) {
     .welcome img {
         width: 90%;
         margin-bottom: 10px;
