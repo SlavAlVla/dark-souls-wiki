@@ -7,27 +7,41 @@
     padding: 20px;
 }
 
-.right_content {
-    height: 400px;
-    float: right;
-    margin-left: 40px;
+.lore_img {
+    width: 45%;
     aspect-ratio: 16/9;
+    border-radius: 20px;
 }
 
-.left_content {
-    height: 400px;
+.img_right {
+    float: right;
+    margin-left: 40px;
+}
+
+.img_left {
     float: left;
     margin-right: 40px;
-    aspect-ratio: 16/9;
 }
 
 #the_great_war {
     width: 65%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
     margin: auto;
 }
 
 @media (max-width: 630px) {
-    .left_content, .right_content {
-        height: 200px;
+    .lore_img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
+
+    .img_left, .img_right {
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #the_great_war { border-radius: 10px;}
 }
