@@ -9,6 +9,8 @@
     <script src="/static/js/anime.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     {% block head %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="/static/css/index.css">
     <title>Dark Souls Russian Wiki</title>
     {% endblock %}
@@ -26,11 +28,13 @@
             <a href="/pages">СТРАНИЦЫ</a>
             <a href="/about">ОБ ИГРЕ</a>
             <a href="/forum">ОБСУЖДЕНИЯ</a>
+            <a href="/login">АВТОРИЗАЦИЯ</a>
         </nav>
         <nav class="mini_menu">
             <a class="mini_link" href="/pages">СТРАНИЦЫ</a>
             <a class="mini_link" href="/about">ОБ ИГРЕ</a>
             <a class="mini_link" href="/forum">ОБСУЖДЕНИЯ</a>
+            <a class="mini_link" href="/login">АВТОРИЗАЦИЯ</a>
         </nav>
     </header>
     <main>
@@ -39,8 +43,12 @@
             <h1 class="main_title">ЗАГЛАВНАЯ</h1>
             <article class="welcome block">
                 <p>Добро пожаловать на страницу русскоязычной энциклопедии о серии игр Dark Souls</p>
-                <img src="/static/images/posters/ds_poster.jpg" alt="poster1">
-                <img src="/static/images/posters/ds_rem_poster.jpg" alt="poster2">
+                <div class="slider">
+                    <div class="poster"><img src="/static/images/posters/ds_poster.jpg" alt="poster1"></div>
+                    <div><img src="/static/images/posters/ds_rem_poster.jpg" alt="poster2"></div>
+                    <div><img src="/static/images/posters/ds2_poster.jpg" alt="poster3"></div>
+                    <div><img src="/static/images/posters/ds3_poster.jpg" alt="poster4"></div>
+                </div>
                 <p>Dark Souls — серия ролевых игр, разработанная FromSoftware и изданная Bandai Namco Entertainment.</p>
             </article>
             <article class="menu block" id="pages">
@@ -82,6 +90,7 @@
                 <h1>ТРЕЙЛЕР</h1>
                 <iframe src="https://www.youtube.com/embed/KfjG9ZLGBHE?si=N-XokKvXFnVSSwkz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </article>
+            <script src="/static/js/karusel.js"></script>
             {% endblock %}
         </article>
     </main>
